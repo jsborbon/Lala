@@ -10,4 +10,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Lala';
+
+  setup = () => {
+    return {
+      loading: true,
+      isSidebarOpen: false,
+      toggleSidbarMenu() {
+        this.isSidebarOpen = !this.isSidebarOpen
+      }
+    }
+  }
 }
