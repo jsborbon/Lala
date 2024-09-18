@@ -34,10 +34,8 @@ export class HeaderComponent implements OnInit {
 
   isAuthenticated(): boolean {
     if (this.userData == null) {
-      console.log("No está autenticado");
       return false; // Si userData es null, el usuario NO está autenticado
     } else {
-      console.log("Está autenticado");
       return true; // Si userData tiene un valor, el usuario está autenticado
     }
   }
