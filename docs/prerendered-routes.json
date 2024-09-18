@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/",
+    "/adopt",
+    "/auth",
+    "/blog",
+    "/contact",
+    "/home",
+    "/sponsor"
+  ]
+}
