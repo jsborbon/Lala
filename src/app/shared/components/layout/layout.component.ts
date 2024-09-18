@@ -12,5 +12,11 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   styleUrl: './layout.component.css'
 })
 export default class LayoutComponent {
+  onOpen($event: Event) {
+    console.log("Se abrió el sidebar");
+  }
+  onClose($event: Event) {
+    throw new Error('Method not implemented.');
+  }
 
 }
