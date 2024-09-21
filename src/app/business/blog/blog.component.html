@@ -1,15 +1,21 @@
 <div class="bg-white bg-cover bg-center rounded-xl shadow-2xl min-h-[600px] py-10">
+    <!-- Encabezado de bienvenida -->
     <p class="font-semibold text-4xl p-2 m-10 mt-20 text-center">
         ¡Bienvenidos al rincón más peludo de la web!
     </p>
+
+    <!-- Descripción del sitio -->
     <p class="font-normal text-lg p-2 m-10 my-5">
         Aquí encontrarás un espacio lleno de amor, consejos y curiosidades sobre nuestros amigos de cuatro patas.
         Queremos ser tu guía en esta maravillosa aventura de compartir tu vida con un perro o un gato.
     </p>
+
+    <!-- Título de la sección del contenido del blog -->
     <p class="font-semibold text-lg p-2 m-10 my-5">
         ¿Qué encontrarás en nuestro blog?
     </p>
 
+    <!-- Lista de temas del blog -->
     <ul class="list-disc text-lg p-2 m-10 my-5 ml-[5rem]">
         <li>
             <p><span class="font-bold">Consejos prácticos: </span>Desde cómo entrenar a tu cachorro hasta los mejores
@@ -17,181 +23,168 @@
         </li>
         <li>
             <p><span class="font-bold">Historias inspiradoras: </span>Conoce a otros amantes de los animales y descubre
-                cómo han cambiado sus vidas gracias a sus mascotas. </p>
+                cómo han cambiado sus vidas gracias a sus mascotas.</p>
         </li>
         <li>
             <p><span class="font-bold">Información sobre salud y bienestar: </span>Te ayudamos a entender la importancia
                 de la adopción y a ser el mejor dueño posible para tu mascota.</p>
         </li>
         <li>
-            <p><span class="font-bold">Adopción y tenencia responsable: </span>Porque cada animal merece sentirse
-                especial y
-                feliz.</p>
+            <p><span class="font-bold">Adopción y tenencia responsable: </span>Porque cada animal merece sentirse especial y feliz.</p>
         </li>
         <li>
-            <p><span class="font-bold">¡Y mucho más! </span>Curiosidades, recetas caseras, ideas para jugar... ¡Todo lo
-                que necesitas saber para disfrutar al máximo de la compañía de tu mejor amigo!</p>
+            <p><span class="font-bold">¡Y mucho más! </span>Curiosidades, recetas caseras, ideas para jugar... ¡Todo lo que necesitas saber para disfrutar al máximo de la compañía de tu mejor amigo!</p>
         </li>
     </ul>
-    <p class="font-bold text-xl items-center gap-1 m-10 my-5">¡Únete a nuestra comunidad de amantes de los animales!</p>
-    <p class="font-normal text-lg items-center gap-1 m-10 my-5">
-        Juntos, podemos hacer que
-        cada perro y gato encuentre el amor y el hogar que merecen.
+
+    <!-- Invitación a unirse a la comunidad -->
+    <p class="font-bold text-xl items-center gap-1 m-10 my-5">
+        ¡Únete a nuestra comunidad de amantes de los animales!
     </p>
+    <p class="font-normal text-lg items-center gap-1 m-10 my-5">
+        Juntos, podemos hacer que cada perro y gato encuentre el amor y el hogar que merecen.
+    </p>
+
+    <!-- Botón de registro con enlace -->
     <a routerLink="/auth" fragment="SignUp" class="grid justify-items-center my-10">
-        <button
-            class="bg-[#6f8001] font-sans font-bold py-3 rounded-full hover:text-slate-50 text-slate-200 items-center gap-1 mx-5 px-4 flex"
-            type="button">
+        <button class="bg-[#6f8001] font-sans font-bold py-3 rounded-full hover:text-slate-50 text-slate-200 items-center gap-1 mx-5 px-4 flex" type="button">
             ¡Regístrate!
         </button>
     </a>
+
+    <!-- Grid de posts del blog -->
     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
-        <!--   ✅ Post 1 - Starts Here 👇 -->
+        <!-- ✅ Post 1 - Comienza Aquí -->
         <div class="rounded overflow-hidden shadow-lg">
             <div class="relative">
+                <!-- Imagen del post -->
                 <a href="#">
                     <img class="w-full max-h-64 object-cover" src="./images/blog_dog.jpg" alt="Sunset in the mountains">
-                    <div
-                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                    </div>
+                    <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
                 </a>
+                <!-- Botón de leer más -->
                 <a href="#!">
-                    <div
-                        class="absolute bottom-0 left-0 bg-[#6F8001] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#6F8001] transition duration-500 ease-in-out">
+                    <div class="absolute bottom-0 left-0 bg-[#6F8001] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#6F8001] transition duration-500 ease-in-out">
                         Leer más...
                     </div>
                 </a>
+                <!-- Fecha del post -->
                 <a>
-                    <div
-                        class="text-sm absolute top-0 right-0 px-4 rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 bg-white text-[#6F8001]">
+                    <div class="text-sm absolute top-0 right-0 px-4 rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 bg-white text-[#6F8001]">
                         <span class="font-bold">27</span>
                         <small>Junio</small>
                     </div>
                 </a>
             </div>
+            <!-- Título y descripción del post -->
             <div class="px-6 py-4">
-                <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-[#6F8001] transition duration-500 ease-in-out">5
-                    tips para preparar tu hogar para la llegada de un nuevo peludo</a>
-                <p class="text-gray-500 text-sm ">
-                    ¡La adopción es un momento emocionante! Pero antes de traer a tu nuevo amigo a casa, es importante
-                    que te prepares para recibirlo de la mejor manera.
+                <a href="#" class="font-semibold text-lg inline-block hover:text-[#6F8001] transition duration-500 ease-in-out">
+                    5 tips para preparar tu hogar para la llegada de un nuevo peludo
+                </a>
+                <p class="text-gray-500 text-sm">
+                    ¡La adopción es un momento emocionante! Pero antes de traer a tu nuevo amigo a casa, es importante que te prepares para recibirlo de la mejor manera.
                 </p>
             </div>
+            <!-- Meta información del post -->
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
-                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                    <svg height="13px" width="13px" viewBox="0 0 512 512">
                         <g>
                             <g>
-                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
-			c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
-			c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
                             </g>
                         </g>
                     </svg>
-                    <span class="ml-1">Hace 3 meses</span></span>
+                    <span class="ml-1">Hace 3 meses</span>
+                </span>
             </div>
         </div>
-        <!--   🛑 Post 1 - Ends Here  -->
+        <!-- 🛑 Post 1 - Termina Aquí -->
 
-        <!--   ✅ Post 2 - Starts Here 👇 -->
+        <!-- ✅ Post 2 - Comienza Aquí -->
+        <!-- Similar estructura al Post 1 pero con contenido diferente -->
         <div class="rounded overflow-hidden shadow-lg">
             <div class="relative">
                 <a href="#">
-                    <img class="w-full max-h-64 object-cover" src="./images/blog_toby.jpg"
-                        alt="Sunset in the mountains">
-                    <div
-                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                    </div>
+                    <img class="w-full max-h-64 object-cover" src="./images/blog_toby.jpg" alt="Imagen de Toby">
+                    <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
                 </a>
                 <a href="#!">
-                    <div
-                        class="absolute bottom-0 left-0 bg-[#6F8001] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#6F8001] transition duration-500 ease-in-out">
+                    <div class="absolute bottom-0 left-0 bg-[#6F8001] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#6F8001] transition duration-500 ease-in-out">
                         Leer más...
                     </div>
                 </a>
                 <a>
-                    <div
-                        class="text-sm absolute top-0 right-0 px-4 rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 bg-white text-[#6F8001]">
+                    <div class="text-sm absolute top-0 right-0 px-4 rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 bg-white text-[#6F8001]">
                         <span class="font-bold">15</span>
                         <small>Julio</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
-                <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-[#6F8001] transition duration-500 ease-in-out">La
-                    historia de Toby: De la calle al sofá</a>
-                <p class="text-gray-500 text-sm ">
-                    Toby llegó a nuestro refugio asustado y desnutrido. Hoy, gracias al amor y los cuidados de nuestros
-                    voluntarios, es un perro feliz y lleno de vida que espera ansioso por encontrar su hogar definitivo.
+                <a href="#" class="font-semibold text-lg inline-block hover:text-[#6F8001] transition duration-500 ease-in-out">
+                    La historia de Toby: De la calle al sofá
+                </a>
+                <p class="text-gray-500 text-sm">
+                    Toby llegó a nuestro refugio asustado y desnutrido. Hoy, gracias al amor y los cuidados de nuestros voluntarios, es un perro feliz y lleno de vida.
                 </p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
-                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                    <svg height="13px" width="13px" viewBox="0 0 512 512">
                         <g>
                             <g>
-                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
-			c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
-			c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
                             </g>
                         </g>
                     </svg>
-                    <span class="ml-1">Hace 2 meses</span></span>
+                    <span class="ml-1">Hace 2 meses</span>
+                </span>
             </div>
         </div>
-        <!--   🛑 Post 2 - Ends Here  -->
+        <!-- 🛑 Post 2 - Termina Aquí -->
 
-        <!--   ✅ Post 3 - Starts Here 👇 -->
+        <!-- ✅ Post 3 - Comienza Aquí -->
+        <!-- Similar estructura al Post 1 pero con contenido diferente -->
         <div class="rounded overflow-hidden shadow-lg">
             <div class="relative">
                 <a href="#">
-                    <img class="w-full max-h-64 object-cover" src="./images/blog_cat_dog.jpg"
-                        alt="Sunset in the mountains">
-                    <div
-                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                    </div>
+                    <img class="w-full max-h-64 object-cover" src="./images/blog_cat_dog.jpg" alt="Imagen de perro y gato">
+                    <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
                 </a>
                 <a href="#!">
-                    <div
-                        class="absolute bottom-0 left-0 bg-[#6F8001] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#6F8001] transition duration-500 ease-in-out">
+                    <div class="absolute bottom-0 left-0 bg-[#6F8001] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#6F8001] transition duration-500 ease-in-out">
                         Leer más...
                     </div>
                 </a>
                 <a>
-                    <div
-                        class="text-sm absolute top-0 right-0 px-4 rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 bg-white text-[#6F8001]">
+                    <div class="text-sm absolute top-0 right-0 px-4 rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 bg-white text-[#6F8001]">
                         <span class="font-bold">3</span>
                         <small>Agosto</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
-                <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-[#6F8001] transition duration-500 ease-in-out">¿Perro
-                    o gato? ¡Encuentra a tu compañero ideal!</a>
-                <p class="text-gray-500 text-sm ">
+                <a href="#" class="font-semibold text-lg inline-block hover:text-[#6F8001] transition duration-500 ease-in-out">
+                    ¿Perro o gato? ¡Encuentra a tu compañero ideal!
+                </a>
+                <p class="text-gray-500 text-sm">
                     ¿Estás pensando en adoptar una mascota pero no sabes si elegir un perro o un gato?
                 </p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
-                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                    <svg height="13px" width="13px" viewBox="0 0 512 512">
                         <g>
                             <g>
-                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
-                    c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
-                    c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
                             </g>
                         </g>
                     </svg>
-                    <span class="ml-1">Hace 1 mes</span></span>
+                    <span class="ml-1">Hace 1 mes</span>
+                </span>
             </div>
         </div>
-        <!--   🛑 Post 3 - Ends Here  -->
+        <!-- 🛑 Post 3 - Termina Aquí -->
     </div>
 </div>

@@ -1,38 +1,65 @@
-<div [ngClass]="{'right-panel-active' : isSignUpActive}" class="container">
-    <div class="form-container sign-up-container">
-        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit('signUpForm')">
-            <h1>Crear una cuenta</h1>
-            <input formControlName="first_name" type="text" placeholder="Nombre" />
-            <input formControlName="last_name" type="text" placeholder="Apellido" />
-            <input formControlName="email" type="email" placeholder="Email" />
-            <input formControlName="password" type="password" placeholder="Contraseña" />
-            <button id="signUp">Registrarme</button>
-        </form>
+<!-- Contenedor principal que contiene los formularios de inicio de sesión y registro. -->
+
+<div [ngClass]="{ 'right-panel-active': isSignUpActive }" class="container">
+  <!-- Contenedor del formulario de registro -->
+
+  <div class="form-container sign-up-container">
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit('signUpForm')">
+      <h1>Crear una cuenta</h1>
+      <input formControlName="first_name" type="text" placeholder="Nombre" />
+      <input formControlName="last_name" type="text" placeholder="Apellido" />
+      <input formControlName="email" type="email" placeholder="Email" />
+      <input
+        formControlName="password"
+        type="password"
+        placeholder="Contraseña"
+      />
+      <button id="signUp">Registrarme</button>
+    </form>
+  </div>
+  <!-- Contenedor del formulario de inicio de sesión -->
+
+  <div class="form-container sign-in-container">
+    <form [formGroup]="signInForm" (ngSubmit)="onSubmit('signInForm')">
+      <h1>Inicio de sesión</h1>
+      <input formControlName="email" type="email" placeholder="Email" />
+      <input
+        formControlName="password"
+        type="password"
+        placeholder="Contraseña"
+      />
+      <button id="signIn">Ingresar</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <!-- Panel que contiene los botones y mensajes para alternar entre registro e inicio de sesión -->
+
+    <div class="overlay">
+      <!-- Panel del lado izquierdo visible en la vista de inicio de sesión -->
+
+      <div class="overlay-panel overlay-left">
+        <h1>¡Bienvenido otra vez!</h1>
+        <p>
+          Para seguir por favor ingresa tu información para iniciar tu sesión
+        </p>
+        <button class="ghost" (click)="onChangeAction()">Ingresar</button>
+        <p>O continúa sin registrarte</p>
+        <button routerLink="/home" class="ghost">No quiero registrarme</button>
+      </div>
+      <!-- Panel del lado derecho visible en la vista de registro -->
+
+      <div class="overlay-panel overlay-right">
+        <h1>¡Hoola!</h1>
+        <p>
+          ¿No tienes una cuenta? Ingresa tu información personal y comienza esta
+          experiencia con nosotros.
+        </p>
+        <button class="ghost" (click)="onChangeAction()">Registrarme</button>
+        <p>O continúa sin iniciar sesión</p>
+        <button routerLink="/home" class="ghost">
+          No quiero iniciar sesión
+        </button>
+      </div>
     </div>
-    <div class="form-container sign-in-container">
-        <form [formGroup]="signInForm" (ngSubmit)="onSubmit('signInForm')">
-            <h1>Inicio de sesión</h1>
-            <input formControlName="email" type="email" placeholder="Email" />
-            <input formControlName="password" type="password" placeholder="Contraseña" />
-            <button id="signIn">Ingresar</button>
-        </form>
-    </div>
-    <div class="overlay-container">
-        <div class="overlay">
-            <div class="overlay-panel overlay-left">
-                <h1>¡Bienvenido otra vez!</h1>
-                <p>Para seguir por favor ingresa tu información para iniciar tu sesión</p>
-                <button class="ghost" (click)="onChangeAction()">Ingresar</button>
-                <p>O continúa sin registrarte</p>
-                <button routerLink="/home" class="ghost">No quiero registrarme</button>
-            </div>
-            <div class="overlay-panel overlay-right">
-                <h1>¡Hoola!</h1>
-                <p>¿No tienes una cuenta? Ingresa tu información personal y comienza esta experiencia con nosotros.</p>
-                <button class="ghost" (click)="onChangeAction()">Registrarme</button>
-                <p>O continúa sin iniciar sesión</p>
-                <button routerLink="/home" class="ghost">No quiero iniciar sesión</button>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>

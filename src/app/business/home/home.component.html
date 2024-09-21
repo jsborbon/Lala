@@ -1,35 +1,44 @@
-<div class="bg-[url('../public/images/dog.jpg')] bg-cover bg-center rounded-xl shadow-md min-h-[600px] ">
-    <div class="flex flex-row">
-        <div class="basis-1/2 text-white">
-            <p class="font-semibold text-4xl p-2 m-10 mt-20 text-center">
-                ¡Tu nuevo mejor amigo te está esperando!
-            </p>
-            <p class="font-normal text-xl p-2 m-10 my-10">
-                En nuestra fundación, creemos que cada animal merece una vida llena de cariño y seguridad. Aquí
-                encontrarás a tu nuevo mejor amigo, ya sea que busques adoptar, patrocinar o simplemente aprender más
-                sobre cómo cuidar a tu mascota.
-            </p>
-
-        </div>
+<!-- Contenedor principal con imagen de fondo y otros estilos aplicados -->
+<div
+  class="bg-[url('../public/images/dog.jpg')] bg-cover bg-center rounded-xl shadow-md min-h-[600px]"
+>
+  <!-- Contenedor flex para organizar el contenido en una fila -->
+  <div class="flex flex-row">
+    <div class="basis-1/2 text-white">
+      <!-- Título principal -->
+      <p class="font-semibold text-4xl p-2 m-10 mt-20 text-center">
+        ¡Tu nuevo mejor amigo te está esperando!
+      </p>
+      <!-- Descripción del mensaje -->
+      <p class="font-normal text-xl p-2 m-10 my-10">
+        En nuestra fundación, creemos que cada animal merece una vida llena de
+        cariño y seguridad. Aquí encontrarás a tu nuevo mejor amigo, ya sea que
+        busques adoptar, patrocinar o simplemente aprender más sobre cómo cuidar
+        a tu mascota.
+      </p>
     </div>
-    <div class="flex flex-row w-full p-2 pr-10 m-10  place-content-center">
-        <a routerLink="/adopt" fragment="dog-section" class="">
-            <button
-                class="bg-[#6f8001] font-sans font-bold py-3 rounded-full hover:text-slate-50 text-slate-200 items-center gap-1 px-4 mx-5 flex"
-                type="button">
-                <img class="w-7" src="./icons/bg_dark_dog.png" alt="cat">
-                ¡Adopta un ladrido!
-
-            </button>
-        </a>
-        <a routerLink="/adopt" fragment="cat-section" class="">
-            <button
-                class="bg-[#6f8001] font-sans font-bold py-3 rounded-full hover:text-slate-50 text-slate-200 items-center gap-1 mx-5 px-4 flex"
-                type="button">
-                <img class="w-7" src="./icons/bg_dark_cat2.png" alt="dog">
-                ¡Adopta un ronroneo!
-
-            </button>
-        </a>
-    </div>
+  </div>
+  <!-- Contenedor para los botones de adopción, centrados -->
+  <div class="flex flex-row w-full p-2 pr-10 m-10 place-content-center">
+    <!-- Botón para adoptar un perro -->
+    <a routerLink="/adopt" fragment="dog-section" class="">
+      <button
+        class="bg-[#6f8001] font-sans font-bold py-3 rounded-full hover:text-slate-50 text-slate-200 items-center gap-1 px-4 mx-5 flex"
+        type="button"
+      >
+        <img class="w-7" src="./icons/bg_dark_dog.png" alt="cat" />
+        ¡Adopta un ladrido!
+      </button>
+    </a>
+    <!-- Botón para adoptar un gato -->
+    <a routerLink="/adopt" fragment="cat-section" class="">
+      <button
+        class="bg-[#6f8001] font-sans font-bold py-3 rounded-full hover:text-slate-50 text-slate-200 items-center gap-1 mx-5 px-4 flex"
+        type="button"
+      >
+        <img class="w-7" src="./icons/bg_dark_cat2.png" alt="dog" />
+        ¡Adopta un ronroneo!
+      </button>
+    </a>
+  </div>
 </div>
